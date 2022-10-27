@@ -15,7 +15,7 @@ class Gradebook
 
   def all_students
     courses.map do |course|
-      course.students.each do |student|
+      course.students.map do |student|
         if students.include?(student) == false
           students << student
         end
