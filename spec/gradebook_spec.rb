@@ -13,7 +13,7 @@ RSpec.describe Gradebook do
   it 'has an instructor' do
     gradebook = Gradebook.new("Mr. Smith")
 
-    expect(gradebook).to be_a Gradebook
+    expect(gradebook.instructor).to eq("Mr. Smith")
   end
 
   it 'starts with an empty array of courses' do
@@ -93,6 +93,7 @@ RSpec.describe Gradebook do
       student_2.log_score(92)
       student_3.log_score(89)
 
+      expect(gradebook.grade_check(40)).to eq([])
       expect(gradebook.grade_check(70)).to eq([student_1])
 
       student_1.log_score(100)
