@@ -4,7 +4,9 @@
 * Complete the activity Below
 * Push your solution to your repo
 * Submit a Pull Request from your repo to this repo
-* Put your name in your PR!
+* In your PR, please include:
+  * Your name
+  * A reflection on how you felt you did with this challenge
 
 ## Iteration 1
 
